@@ -2,9 +2,9 @@
 
 /**
  * @package  	Simple Duoshuo Disqus Comments - Plugin for Joomla3.X!
- * @author		ngxiaoyi - http://www.ruanjian081.com
+ * @author	ngxiaoyi - http://www.ruanjian081.com
  * @copyright	Copyright (c) 2012 - 2013 ruanjian081.com
- * @license		GNU/GPL license: http://www.gnu.org/licenses/gpl-2.0.html
+ * @license	GNU/GPL license: http://www.gnu.org/licenses/gpl-2.0.html
  */
  
 defined( '_JEXEC' ) or die( 'Restricted access' );
@@ -41,11 +41,10 @@ class plgContentDuoshuo extends JPlugin {
 	function onContentPrepare( $context, &$article, &$params ) {
 
 		global $mainframe;
-		$identifier_prefix = "Joomla_Disqus_UID_"; 
 
 		if (($this->exclude('Exclude_Article_Ids',$article->id)==0) AND ($this->exclude('Exclude_Category_Ids',$article->catid)==0)){
 			$sect="<br />";
-			$sect.='<div style="float:left;font-size:80%"><a href="http://www.ruanjian081.com/programe-design/php-language/12-easy-duoshuo-disqus-plugin-for-j30">简易joomla3.X多说评论框插件</a></div>';
+			$sect.='<div style="text-align:center;font-size:80%"><a href="http://www.ruanjian081.com/programe-design/php-language/12-easy-duoshuo-disqus-plugin-for-j30">简易joomla3.X多说评论框插件</a></div>';
 			$sect.="<br />";
 
 			$lang =& JFactory::getLanguage();
