@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+
+  <name>Duoshuo for joomla3.0</name>
+	<author>@ngxiaoyi</author>
+	<creationDate>2013-05</creationDate>
+	<copyright>Copyright (C) 2010 www.ruanjian081.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>http://www.ruanjian081.com/</authorUrl>
+	<version>1.0</version>
+	<description>	<![CDATA[
+	<u>简易joomla3.0&3.1版本多说社交化评论框插件。</u><br /><br />
+	详情请访问： <a href="http://www.ruanjian081.com/programe-design/php-language/12-easy-duoshuo-disqus-plugin-for-j30" target="_blank">简易joomla3.X多说评论框插件</a>.<br />
+	]]></description>
+	<files>
+		<filename plugin="duoshuo">duoshuo.php</filename>
+	</files>
+  <config>
+  
+  <fields name="params" addfieldpath="/plugins/content">
+  
+  <fieldset name="basic">
+	  <field name="spacer1" type="spacer" default="" label="&lt;b&gt;&lt;u&gt;多说设置&lt;/b&gt;&lt;/u&gt;" description="" />
+	  <field name="duoshuo_shortname" type="text" default="" label="多说二级域名" description="填写你在多说管理后台中设置的‘xxx.doushuo.com’中的‘xxx’二级域名"/>
+	  <field name="spacer2" type="spacer" default="" label="&lt;b&gt;&lt;u&gt;高级设置&lt;/b&gt;&lt;/u&gt;" description="" />  
+      <field name="Exclude_Article_Ids" type="text" default="" label="不包含的文章" description="填写不包含评论框的文章ID，用英文半角逗号分隔"/>
+      <field name="Exclude_Category_Ids" type="text" default="" label="不包含的分类" description="填写不包含评论框的文章分类ID，用英文半角逗号分隔"/>
+	  <field name="Merge_Comments" type="list" default="0" label="合并评论" description="多语言网站合并评论">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+	  </field>	 
+  </fieldset>
+  </fields>
+</config>
+</extension>
